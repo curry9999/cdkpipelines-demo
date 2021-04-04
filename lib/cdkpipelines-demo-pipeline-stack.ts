@@ -35,7 +35,7 @@ export class CdkpipelinesDemoPipelineStack extends Stack {
          
          // We need a build step to compile the TypeScript Lambda
          buildCommand: 'npm run build',
-//         installCommand: 'rm package-lock.json && npx projen && npm install',
+         installCommand: 'rm package-lock.json && npx projen && npm install',
         }),
     });
 
