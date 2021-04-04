@@ -35,7 +35,7 @@ export class CdkpipelinesDemoPipelineStack extends Stack {
          
          // We need a build step to compile the TypeScript Lambda
          buildCommand: 'echo',
-         installCommand: 'npm install && npm run build && cdk synth',
+         installCommand: 'npm cache clear && npm prune && npx projen && npm install && ls node_modules/@aws-cdk/aws-backup/lib && npx projen build',
          synthCommand: 'echo',
         }),
     });
