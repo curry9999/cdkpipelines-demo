@@ -35,7 +35,7 @@ export class CdkpipelinesDemoPipelineStack extends Stack {
          
          // We need a build step to compile the TypeScript Lambda
          buildCommand: 'echo',
-         installCommand: 'echo',
+         installCommand: 'npm insatall',
          synthCommand: 'echo',
         }),
     });
