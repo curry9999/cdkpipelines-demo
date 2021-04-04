@@ -34,7 +34,7 @@ export class CdkpipelinesDemoPipelineStack extends Stack {
          cloudAssemblyArtifact,
          
          // We need a build step to compile the TypeScript Lambda
-         buildCommand: 'npm run build',
+         buildCommand: 'npm run build && npx cdk deploy',
          installCommand: 'rm package-lock.json && npx projen && npm install',
         }),
     });
